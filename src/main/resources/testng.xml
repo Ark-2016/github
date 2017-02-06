@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GitHubTestSuite" verbose="0">
+    <test name="Google pages testing">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="by.epam.github.logic.RunnerTest">
+                <methods>
+                    <include name="testLoginGitHub"/>
+                    <include name="testCreateNewRepository()"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
